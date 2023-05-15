@@ -1,0 +1,14 @@
+Switch# show version
+
+name# show ip ssh
+name# configure terminal
+name(config)# enable secret 1234-MetroPole:1234
+name(config)# ip domain-name metropolecg.com
+name(config)# ip ssh version 2
+name(config)# crypto key generate rsa
+How many bits in tje modulus [512]: 1024
+name(config)# username admin secret 1234-MetroPole:1234
+name(config)# line vty 0 15
+name(config-line)# transport input ssh
+name(config-line)# login local
+name(config-line)# exit
