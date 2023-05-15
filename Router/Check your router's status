@@ -1,0 +1,21 @@
+# show ip interface brief
+
+# show ipv6 interface brief
+
+
+# show ip route
+
+# show ipv6 route
+
+
+# show ......
+
+# show running-config or #sh run 
+# show running-config | section 
+
+# show ip interface brief | include up
+
+# show ip interface brief | exclude unassigned
+
+# show history
+# terminal history size 200
