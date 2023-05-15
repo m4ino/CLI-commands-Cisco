@@ -1,0 +1,5 @@
+name# configure terminal
+name(config)# int fa0/1
+name(config-if)# switchport mode access
+name(config-if)# switchport access vlan 20
+name(config-if)# end
