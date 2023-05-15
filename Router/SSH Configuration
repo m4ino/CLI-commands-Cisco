@@ -1,12 +1,12 @@
 Router> enable
-Router# configure terminal
+Router# configure terminal        
 Enter configuration commands, one per line.  End with 
 CNTL/Z.
 Router(config)# hostname name
-name(config)# enable secret 1234-MetroPole:1234
-name(config)# ip ssh version 2
+name(config)# enable secret 1234-MetroPole:1234    //#secret for enable mode#//
+name(config)# ip ssh version 2                    //#activation of ssh#//
 name(config)# ip domain-name metropolecg.com
-name(config)# username admin secret 
+name(config)# username admin secret               //#set login and passwrd for ssh session#//
 1234-MetroPole:1234
 name(config)# crypto key generate rsa
 The name for the keys will be: name.metropolecg.com
@@ -24,19 +24,19 @@ name(config)# line console 0
 name(config-line)# password 1234-MetroPole:1234
 name(config-line)# login
 name(config-line)# exit
-name(config)# line vty 0 15
-name(config-line)# transport input ssh
-name(config-line)# login local
+name(config)# line vty 0 15                                //#select vty lines#//
+name(config-line)# transport input ssh                     //#only ssh users#//
+name(config-line)# login local                             //# set login for console session#//
 name(config-line)# exit
-name(config)# service password-encryption
+name(config)# service password-encryption                  //#encrypte all the password#//
 name(config)# banner motd #Acces aux Personnes 
 Autorisees Seulement !#
 name(config)# exit
 name#
 %SYS-5-CONFIG_I: Configured from console by console
 
-name# copy running-config startup-config
-Destination filename [startup-config]?
+name# copy running-config startup-config                                   //#save new configuration in 
+Destination filename [startup-config]?                                    the running configuration file#//
 Building configuration...
 [OK]
 name#
