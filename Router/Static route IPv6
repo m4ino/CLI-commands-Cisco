@@ -1,0 +1,2 @@
+name(config)# ipv6 unicast-routing
+name(config)# ipv6 route ::/0 2001:db8:acad:1001::1
