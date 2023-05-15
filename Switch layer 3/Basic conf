@@ -1,0 +1,10 @@
+Switch(config)# hostname SwitchL3
+SwitchL3(config)# interface g1/0/1
+SwitchL3(config-if)# no switchport      //# puts the interface in L3 mode (known as "routed port") #//
+SwitchL3(config-if)# ip address 192.168.10.2 255.255.255.0
+SwitchL3(config-if)# ipv6 address 2001:db8:acad:10::2/64
+SwitchL3(config-if)# exit
+SwitchL3(config)# ip routing
+SwitchL3(config)# ip route 0.0.0.0 0.0.0.0 192.168.10.1
+SwitchL3(config)# ipv6 unicast-routing
+SwitchL3(config)# ipv6 route ::/0 2001:db8:acad:10::1
