@@ -1,0 +1,4 @@
+name(config)# int f0/1
+name(config-if)# mls qos trust cos
+name(config-if)# switchport voice vlan 50
+name(config-if)# exit
