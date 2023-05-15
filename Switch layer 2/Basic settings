@@ -1,0 +1,15 @@
+Switch# show vlan brief 
+
+
+
+Switch(config)# hostname name
+name(config)# interface vlan 100
+name(config-if)# ip address 192.168.100.2 255.255.255.0
+name(config-if)# ipv6 address 2001:db8:acad:100::2/64
+name(config-if)# no shutdown
+
+
+name(config)# ip default-gateway 192.168.100.254
+
+name# show ip interface brief
+
