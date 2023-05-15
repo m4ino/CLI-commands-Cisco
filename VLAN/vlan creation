@@ -1,0 +1,16 @@
+name# configure terminal
+name(config)# vlan 20
+name(config-vlan)# name Branch1
+name(config-vlan)# exit
+name(config)# vlan 21
+name(config-vlan)# name Branche2
+name(config-vlan)# exit
+name(config)# vlan 40
+name(config-vlan)# name Branch3
+name(config-vlan)# exit
+name(config)# vlan 50
+name(config-vlan)# name Branch4
+name(config-vlan)# exit
+name(config)# vlan 100
+name(config-vlan)# name Branch5
+name(config-vlan)# end
