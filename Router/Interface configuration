@@ -1,0 +1,16 @@
+name(config)# interface GigabitEthernet0/0
+name(config-if)# ip address 192.168.110.254 
+255.255.255.0
+name(config-if)# ipv6 address 
+2001:db8:acad:110::254/64
+name(config-if)# description Lien Sous-Reseau VPN
+name(config-if)# no shutdown
+name(config-if)# exit
+name(config)# interface Serial0/1/1
+name(config-if)# ip address 10.0.0.2 255.255.255.0
+name(config-if)# ipv6 address 
+2001:db8:acad:1001::2/64
+name(config-if)# description Lien 
+name-RouteurCG
+name(config-if)# no shutdown
+name(config-if)# exit
