@@ -1,0 +1,3 @@
+Switch# vlan database
+Switch(vlan)# no vlan 130
+Switch(vlan)# apply
