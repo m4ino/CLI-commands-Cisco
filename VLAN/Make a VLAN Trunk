@@ -1,0 +1,5 @@
+name# conf t
+name(config)# int g0/1
+name(config-if)# switchport mode trunk
+name(config-if)# switchport trunk native vlan 100
+name(config-if)# switchport trunk allowed vlan 20,21,40,50,100
